@@ -1,0 +1,16 @@
+/* some preexisting styles to make the page
+   easier to look at... */
+* {
+    padding: 10px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 90%;
+}
+
+/* your style definitions go here... */
