@@ -1,0 +1,42 @@
+/*
+    These are my styles for my mariners page.
+
+    Author: Josh Archer
+    Date: 1/19/22
+    File: styles.css
+*/
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: #315050;
+    font-family: Arial; /* we need to add more optional fonts later... */
+    font-size: 1.75em;
+    text-decoration: underline;
+}
+
+p {
+    color: #780a0a;
+    border-left: 2px solid #780a0a;
+    padding-left: 10px;
+}
+
+/* my image must be offset and have round corners */
+img {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
