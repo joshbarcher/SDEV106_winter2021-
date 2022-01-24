@@ -1,0 +1,51 @@
+
+h1 {
+    /* technique #1 - set all margins */
+    margin: 4px;
+
+    /* technique #2 - set individual margins */
+    margin-top: 10px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* technique #3 - set top/bottom and left/right margins */
+    margin: 16px 8px;
+
+    /* technique #4 - set top, left/right and bottom margins */
+    margin: 16px 8px 14px;
+
+    /* technique #5 - set top, right, bottom and left margins */
+    margin: 20px 14px 0px 10px;
+
+    /* individual border properties */
+    border-width: 4px;
+    border-style: dashed;
+    border-color: red;
+
+    border: 5px dotted blue;
+
+    /* rounded border corners */
+    border-radius: 20px;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+
+    border-radius: 15px 15px 0 0;
+
+    /* padding follows all the rules for declaring margins */
+    padding: 15px;
+    padding: 10px 5px; /* top/bottom, left/right */
+}
+
+
+
+
+
+
+
+
+
+
