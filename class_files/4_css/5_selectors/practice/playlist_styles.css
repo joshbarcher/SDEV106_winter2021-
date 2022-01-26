@@ -3,14 +3,49 @@ header > nav {
 }
 
 section aside {
-    font-family: "Comic Sans MS";
+    font-family: Verdana, sans-serif;
 }
 
-section#play2 h1 {
-    color: sandybrown;
+/* target all elements with the class playbill */
+.playbill {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 10px;
 }
 
-section.playbill {
-    border-top: 2px solid gray;
+#play1 {
+    background-color: lightgoldenrodyellow;
 }
+
+#play2 {
+    background-color: lightblue;
+}
+
+#play3 {
+    background-color: lightcoral;
+}
+
+#play4 {
+    background-color: lightsalmon;
+}
+
+/* prefix a class name with the tag it's applied to */
+aside.playbill {
+    /* target an aside with the class of playbill */
+    border: 3px solid black;
+}
+
+/* target an element with class playbill inside of an aside */
+aside .playbill {
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
 

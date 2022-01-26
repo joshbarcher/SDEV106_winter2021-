@@ -1,0 +1,40 @@
+article p {
+    background-color: beige;
+    border: 1px solid brown;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+aside > p {
+    background-color: lightgreen;
+    border: 1px solid olivedrab;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* highlight all ems, strongs or spans */
+article em, article strong, article span {
+    color: green;
+    font-weight: normal; /* remove bold */
+    text-decoration: black underline;
+}
+
+aside em, aside strong {
+    color: darkblue;
+    font-weight: normal; /* remove bold */
+    text-decoration: black underline;
+}
+
+article > p {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
