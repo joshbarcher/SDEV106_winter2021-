@@ -1,14 +1,36 @@
 p#sunny:hover {
     background-color: #0066ee;
     color: gold;
+    margin-left: 30px;
 }
 
 p#showers:hover {
     background-color: darkblue;
     color: cornflowerblue;
+    margin-left: 30px;
 }
 
 p#storms:hover {
     background-color: #222222;
     color: azure;
+    margin-left: 30px;
 }
+
+p {
+    background-color: lightblue;
+    padding: 8px;
+}
+
+article {
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+

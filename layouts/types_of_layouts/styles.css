@@ -1,0 +1,43 @@
+html {
+    background-color: #51cf66;
+}
+
+body {
+    background-color: #ebead5;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, aside {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+aside {
+    border: 1px solid darkblue;
+    border-radius: 5px;
+    background-color: #8ccdf1;
+}
+
+p {
+    padding: 2%;
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 40%;
+    display: inline-block;
+    background-color: #d1dbe2;
+}
+
+
+
+
+
+
+
+

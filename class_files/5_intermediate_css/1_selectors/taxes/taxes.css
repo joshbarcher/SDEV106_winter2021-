@@ -1,17 +1,14 @@
+/* LVHA rule */
 
-a:link {
-    color: #f54281;
+a {
+    text-decoration: none;
 }
 
-a:visited {
-    color: #972e4c;
+a:link, a:visited { /* visited and unvisited links look the same */
+    color: #146954;
 }
 
-a:hover {
-    color: #ff72b9;
-}
-
-a:active {
-    color: #ff2440;
+a:hover, a:active {
+    color: #40e0c0;
 }
 
