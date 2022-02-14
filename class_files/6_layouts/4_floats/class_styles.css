@@ -1,0 +1,54 @@
+#explorers {
+    float: left;
+}
+
+#visitors {
+    float: right;
+}
+
+.muir {
+    float: left;
+}
+
+#early-years img {
+    float: left;
+}
+
+#early-years aside {
+    float: right;
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#early-years p {
+    /*clear: both;*/
+}
+
+p {
+    padding: 4px;
+}
+
+#explorers-div p:last-child {
+    /*clear: left;*/
+}
+
+#visitors-div p:last-child {
+    /*clear: right;*/
+}
+
+/*div::before {
+    content: "start of div";
+}*/
+
+/* clear fix hack */
+div::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+
+
+
