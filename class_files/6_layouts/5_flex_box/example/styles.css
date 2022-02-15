@@ -1,6 +1,7 @@
 div h1 {
     border-radius: 25px 25px 0 0;
     padding: 10px;
+    font-size: 1.1em;
 }
 
 div h1, div p {
@@ -11,7 +12,8 @@ div h1, div p {
 div {
     border-radius: 25px;
     margin: 20px;
-    width: 300px;
+    width: 240px;
+    /*height: 250px;*/
 }
 
 #div1 h1 {
@@ -72,3 +74,42 @@ div {
     background-color: rgb(115,3,5);
     color: rgb(241, 255, 241);
 }
+
+/* use a fixed layout */
+html {
+    background-color: beige;
+}
+
+body {
+    background-color: lightgreen;
+    width: 1000px;
+    margin: auto;
+}
+
+/* flex box rules */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*overflow: scroll;*/
+
+    justify-content: space-around;
+    align-content: stretch;
+
+    /* make the height fixed */
+    height: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
