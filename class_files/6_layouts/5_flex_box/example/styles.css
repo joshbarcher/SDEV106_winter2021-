@@ -93,8 +93,9 @@ main {
     flex-direction: row;
     /*overflow: scroll;*/
 
-    justify-content: space-around;
-    align-content: stretch;
+    justify-content: space-around; /* main axis */
+    align-content: center; /* cross axis */
+    align-items: stretch; /* a single row or column */
 
     /* make the height fixed */
     height: 800px;
