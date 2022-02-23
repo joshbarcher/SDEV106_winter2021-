@@ -1,9 +1,9 @@
 
+/* styles for all devices */
 body {
     background-color: cornsilk;
 }
 
-/* styles for all devices */
 h1 {
     border-top: 2px solid rosybrown;
     border-bottom: 2px solid rosybrown;
@@ -19,62 +19,85 @@ p {
     margin: 30px;
 }
 
-/* styles for mobile devices */
+/* styles for mobile < 480px */
 @media screen and (max-width: 480px) {
     h1 {
         background-color: #8d5152;
         color: bisque;
         text-align: center;
-        font-weight: bold;
+        font-size: 1.3em;
+        text-decoration: underline;
     }
 
     p {
-        margin: 5px;
+        font-size: 1.1em;
+        margin: 10px 4px;
+        /*text-align: center;*/
+        color: darkblue;
     }
 }
 
-/* styles for tablets */
-@media screen and (min-width: 480px) {
+/* styles for tablet 480-960px */
+@media screen and (min-width: 481px) and (max-width: 960px) {
     article {
         display: grid;
-        grid-template-areas:
-            "title title"
-            "p1    p2";
-        grid-gap: 10px;
-    }
-
-    p {
-        border: 1px solid black;
-        border-radius: 5px;
-        background-color: floralwhite;
-        padding: 8px;
-        margin: 0 10px 0 10px;
-    }
-
-    /* grid names */
-    h1 { grid-area: title; }
-    p:nth-of-type(1) { grid-area: p1; }
-    p:nth-of-type(2) { grid-area: p2; }
-}
-
-/* styles for desktops */
-@media screen and (min-width: 960px) {
-    html {
-        margin: 10px;
-    }
-
-    article {
-        grid-template-areas:
-                "title p1"
-                "p2    p2";
+        grid-template-columns: 1fr 2fr;
     }
 
     h1 {
-        background-color: cornsilk;
-        border: none;
-        text-decoration: underline;
-        margin-left: 30px;
-        margin-top: 30px;
+        grid-column: 1;
+        grid-row: 1 / 3;
+        border-right: 2px solid rosybrown;
+    }
+
+    p {
+        background-color: #f0f0f0;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    p:nth-of-type(1) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    p:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 2;
     }
 }
+
+/* styles for desktop */
+@media screen and (min-width: 961px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "head  head "
+            "para1 para2";
+    }
+
+    h1 {
+        text-align: center;
+        grid-area: head;
+        font-size: 3em;
+    }
+
+    p:nth-of-type(1) {
+        grid-area: para1;
+    }
+
+    p:nth-of-type(2) {
+        grid-area: para2;
+    }
+}
+
+
+
+
+
+
+
+
 

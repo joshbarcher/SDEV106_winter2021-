@@ -33,37 +33,24 @@ article, header, footer, aside {
 }
 
 .container {
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "head  jewel jewel jewel"
+        ".     jewel jewel jewel"
+        "clock clock cloth cloth"
+        "furn  furn  aside book "
+        "furn  furn  .     book "
+        "foot  foot  .     book "
 }
 
-header {
+/* give each area in my layout a name */
+header { grid-area: head; }
+article#jewelry { grid-area: jewel; }
+article#clocks { grid-area: clock; }
+article#clothes { grid-area: cloth; }
+article#furniture { grid-area: furn; }
+article#books { grid-area: book; }
+footer { grid-area: foot; }
+aside { grid-area: aside; }
 
-}
-
-article#jewelry {
-
-}
-
-article#clocks {
-
-}
-
-article#clothes {
-
-}
-
-article#furniture {
-
-}
-
-article#books {
-
-}
-
-footer {
-
-}
-
-aside {
-
-}
