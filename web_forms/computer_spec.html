@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Enter Your Spec</title>
+	</head>
+	<body>
+		<!-- case, cpu, memory, hdd/ssd/nvme, fans, dedicated card, os, ... -->
+		<form>
+			<section>
+				<label for="cpu">CPU</label>
+				<input type="text" name="cpu-family" id="cpu">
+			</section>
+			<section>
+				<label for="memory">Memory (GBs)</label>
+				<input type="number" name="main-memory" id="memory">
+			</section>
+			<section>
+				<input type="checkbox" name="hard-disk" id="hdd">
+				<label for="hdd">HDD</label>
+				<input type="checkbox" name="solid-state" id="ssd">
+				<label for="ssd">SSD</label>
+				<input type="checkbox" name="nvme" id="nvme">
+				<label for="nvme">NVME</label>
+			</section>
+			<section>
+				<!-- a label without an associated input control -->
+				<label>Dedicated Graphics Card</label>
+
+				<input type="radio" name="graphics" id="graphics-yes" value="yes">
+				<label for="graphics-yes">Yes</label>
+				<input type="radio" name="graphics" id="graphics-no" value="no">
+				<label for="graphics-no">No</label>
+			</section>
+
+			<button type="submit">Upload Specs!</button>
+		</form>
+	</body>
+</html>
