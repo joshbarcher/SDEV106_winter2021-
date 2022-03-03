@@ -1,0 +1,53 @@
+html {
+    background-color: #bca69e;
+}
+
+body {
+    width: 680px;
+    margin: auto;
+    background-color: lightblue;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+#main input {
+    width: 120px;
+}
+
+#main label {
+    width: 160px;
+    display: inline-block;
+}
+
+#main section {
+    margin-bottom: 8px;
+}
+
+#other label {
+    width: 160px;
+    display: inline-block;
+}
+
+#other section {
+    margin-bottom: 8px;
+}
+
+#other input, #other select {
+    width: 120px
+}
+
+
+
+
+

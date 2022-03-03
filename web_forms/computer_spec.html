@@ -3,47 +3,85 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Enter Your Spec</title>
+		<link rel="stylesheet" href="form_styles.css">
 	</head>
 	<body>
 		<!-- case, cpu, memory, hdd/ssd/nvme, fans, dedicated card, os, ... -->
 		<form>
-			<section>
-				<label for="cpu">CPU</label>
-				<input type="text" name="cpu-family" id="cpu">
-			</section>
-			<section>
-				<label for="memory">Memory (GBs)</label>
-				<input type="number" name="main-memory" id="memory">
-			</section>
-			<section>
-				<input type="checkbox" name="hard-disk" id="hdd">
-				<label for="hdd">HDD</label>
-				<input type="checkbox" name="solid-state" id="ssd">
-				<label for="ssd">SSD</label>
-				<input type="checkbox" name="nvme" id="nvme">
-				<label for="nvme">NVME</label>
-			</section>
-			<section>
-				<!-- a label without an associated input control -->
-				<label>Dedicated Graphics Card</label>
+			<fieldset id="main">
+				<legend>Main Specs</legend>
+				<section>
+					<label for="cpu">CPU</label>
+					<input type="text" name="cpu-family" id="cpu">
+				</section>
+				<section>
+					<label for="memory">Memory (GBs)</label>
+					<input type="number" name="main-memory" id="memory">
+				</section>
+			</fieldset>
+			<fieldset>
+				<legend>Secondary Specs</legend>
+				<section>
+					<label>Storage Device</label>
 
-				<input type="radio" name="graphics" id="graphics-yes" value="yes">
-				<label for="graphics-yes">Yes</label>
-				<input type="radio" name="graphics" id="graphics-no" value="no">
-				<label for="graphics-no">No</label>
-			</section>
-			<section>
-				<label>Operating System</label>
+					<div class="form-control">
+						<input type="checkbox" name="hard-disk" id="hdd">
+						<label for="hdd">HDD</label>
+					</div>
+					<div class="form-control">
+						<input type="checkbox" name="solid-state" id="ssd">
+						<label for="ssd">SSD</label>
+					</div>
+					<div class="form-control">
+						<input type="checkbox" name="nvme" id="nvme">
+						<label for="nvme">NVME</label>
+					</div>
+				</section>
+				<section>
+					<!-- a label without an associated input control -->
+					<label>Dedicated Graphics Card</label>
 
-				<input type="radio" name="os" id="windows" value="windows">
-				<label for="windows">Windows</label>
-				<input type="radio" name="os" id="linux" value="linux">
-				<label for="linux">Linux</label>
-				<input type="radio" name="os" id="mac" value="mac">
-				<label for="mac">Mac OS</label>
-			</section>
+					<div class="form-control">
+						<input type="radio" name="graphics" id="graphics-yes" value="yes">
+						<label for="graphics-yes">Yes</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="graphics" id="graphics-no" value="no">
+						<label for="graphics-no">No</label>
+					</div>
+				</section>
+				<section>
+					<label>Operating System</label>
 
-
+					<div class="form-control">
+						<input type="radio" name="os" id="windows" value="windows">
+						<label for="windows">Windows</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="os" id="linux" value="linux">
+						<label for="linux">Linux</label>
+					</div>
+					<div class="form-control">
+						<input type="radio" name="os" id="mac" value="mac">
+						<label for="mac">Mac OS</label>
+					</div>
+				</section>
+			</fieldset>
+			<fieldset id="other">
+				<legend>Other</legend>
+				<section>
+					<label for="ratio">Monitor Aspect Ratio</label>
+					<select name="aspect-ratio" id="ratio">
+						<option>4:3</option>
+						<option>16:9</option>
+						<option>21:9</option>
+					</select>
+				</section>
+				<section>
+					<label for="received">Date Received</label>
+					<input type="date" name="received" id="received">
+				</section>
+			</fieldset>
 
 			<button type="submit">Upload Specs!</button>
 		</form>
