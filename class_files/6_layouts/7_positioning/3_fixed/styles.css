@@ -32,6 +32,11 @@ aside {
     color: white;
     padding: 6px;
     width: 150px;
+
+    /* make sure the aside is visible */
+    position: fixed;
+    bottom: calc(50% - 28.3px);
+    right: 20px;
 }
 
 aside p {

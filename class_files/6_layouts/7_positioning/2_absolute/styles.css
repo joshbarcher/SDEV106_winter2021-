@@ -10,10 +10,12 @@ body {
 }
 
 article {
-
+    position: relative;
 }
 
 img {
+    position: absolute;
     width: 150px;
+    left: -200px;
 }
 

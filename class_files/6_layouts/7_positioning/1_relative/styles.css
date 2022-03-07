@@ -28,3 +28,29 @@ p {
     padding: 4px 8px;
 }
 
+/* move the image to the right */
+div:first-of-type {
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+div:last-of-type {
+    position: relative;
+    right: 370px;
+    top: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
