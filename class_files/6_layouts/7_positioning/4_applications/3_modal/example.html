@@ -34,7 +34,9 @@
             </ul>
         </nav>
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat faucibus mauris, iaculis hendrerit justo
+			<!-- if you click on the first paragraph we will show the dialog -->
+            <p onclick="document.getElementById('modal-cover').style.display='block'">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat faucibus mauris, iaculis hendrerit justo
                 consequat non. Vestibulum consequat nibh ipsum, at auctor magna auctor a. Praesent id lorem vel lorem ultricies
                 imperdiet. Sed mollis arcu at est rutrum elementum. Etiam quam risus, euismod quis ligula sed, feugiat posuere
                 ex. Proin ante orci, rhoncus sit amet velit sit amet, dignissim luctus leo. Mauris pretium urna lacus, ac cursus
@@ -114,7 +116,7 @@
                 <section>
                     <h1>A message here</h1>
                     <p>Quisque vel lobortis erat. Duis vitae odio ut nunc gravida venenatis.</p>
-                    <button>
+                    <button onclick="document.getElementById('modal-cover').style.display='none'">
                         Close
                     </button>
                 </section>

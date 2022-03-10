@@ -75,14 +75,16 @@ footer a {
 
 /* hover menus */
 .menu {
-
+    position: relative; /* this might not be necessary */
 }
 
 .submenu {
     background-color: black;
     width: 150px;
+    position: absolute;
+    display: none; /* hide menu initially */
 }
 
 .menu:hover .submenu {
-
+    display: block;
 }
